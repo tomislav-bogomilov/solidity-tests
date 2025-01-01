@@ -12,8 +12,46 @@ contract Property{
     bytes3 public holderBiggest;
     //.. up to bytes32
 
-    //arrays
+    /** arrays **/
+
+    // fixed array
     uint [3] public numbers = [2, 3, 4];
+
+    /** dynamic arrays **/
+    uint[] public dynamicNumbers; // has: .length .push .pop members
+     function getDynamicLength() public view returns(uint){
+        return dynamicNumbers.length;
+    }
+    // appending a new element
+    function addDynamicElement(uint item) public{
+        dynamicNumbers.push(item);
+    }
+    // returning an element at an index
+    function getDynamicElement(uint i) public view returns(uint){
+        if(i < dynamicNumbers.length){
+            return dynamicNumbers[i];
+        }
+
+        return 0;
+    }
+
+    // removing the last element of the array
+    function popDynamicElement() public{
+        dynamicNumbers.pop();
+    }
+
+    function initDynamicArray() public{
+        // declaring a memory dynamic array
+        // it's not possible to resize memory arrays (push() and pop() are not available).
+        uint[] memory memoryArray = new uint[](3);
+        memoryArray[0] = 10;
+        memoryArray[1] = 20;
+        memoryArray[2] = 30;
+        dynamicNumbers = memoryArray;
+    }
+ 
+
+    /** end of dynamic arrays **/
 
     // can be initialized at declaration or in the constructor only
     address immutable public owner; 
@@ -24,6 +62,7 @@ contract Property{
     function setElement(uint index, uint value) public {
         numbers[index] = value;
     }
+
 
     function getLength() public view returns(uint) {
         return numbers.length;
