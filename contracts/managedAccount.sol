@@ -24,6 +24,7 @@ contract VirtualPropery {
         price = _price;
     }
 
+    /// @notice Returns the price of the contract
     function getPrice() view public returns (uint) {
         return price;
     }

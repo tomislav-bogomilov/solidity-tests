@@ -8,27 +8,132 @@
 			{
 				"inputs": [
 					{
-						"internalType": "int256",
-						"name": "_state",
-						"type": "int256"
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
 					}
 				],
-				"name": "setState",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "location",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "numbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "setElement",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "state",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
+						"internalType": "string",
+						"name": "_location",
+						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"name": "setLocation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "setPrice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -60,11 +165,11 @@
 	},
 	"sources": {
 		"contracts/firstTestContract.sol": {
-			"keccak256": "0x44d69888ce7910c395b148818212764fbfd75f802bb84e6e4b2e2c7e2f25685c",
-			"license": "MIT",
+			"keccak256": "0x4fd08ea98a02fe2f96c0a4ff94cefd3956708b3a211de967ccc15d898a932090",
+			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://1a17534b2d3665704941eebdbb69fd43a31791229d6c8449ce3e42d415ad054d",
-				"dweb:/ipfs/QmceSfrN7r7iJXoBihkGQYU5VYzZQ1Ch7iJdDRNFnKoPye"
+				"bzz-raw://2d8acbc410bfe10a4f1390f1e005f4dd7a95fc401876cb7797ceb6b8b02df9a1",
+				"dweb:/ipfs/QmeHxVP76ttLk7DkmzehyGUPz7nAnwzRihRa6XS5xQTLRF"
 			]
 		}
 	},
