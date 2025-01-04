@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "schoolInstructor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/instructor.sol": "School"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/instructor.sol": {
+			"keccak256": "0x6cf9cb4d8cad423eb2cc2429c81ee13b51b837d906ebcc5497b4232491734891",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://384514e0705b5ea9e0a36addea1f9282ef8ebb984ac66f2c6b0a91e586a84ad7",
+				"dweb:/ipfs/QmYnFoPv4HVnJ5i6UxjA6e5tr851u9m6o3Be9SbtBdK75x"
+			]
+		}
+	},
+	"version": 1
+}

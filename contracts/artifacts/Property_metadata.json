@@ -6,29 +6,39 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_price",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_location",
-						"type": "string"
-					}
-				],
+				"inputs": [],
+				"name": "addToString",
+				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getLength",
+				"name": "bytesString",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "bytes",
 						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
 						"type": "uint256"
+					}
+				],
+				"name": "getElementFromBytes",
+				"outputs": [
+					{
+						"internalType": "bytes1",
+						"name": "",
+						"type": "bytes1"
 					}
 				],
 				"stateMutability": "view",
@@ -36,12 +46,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "getPrice",
+				"name": "getStringFromBytes",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -61,79 +71,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "numbers",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
-				"name": "owner",
+				"name": "regularString",
 				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "index",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "setElement",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_location",
+						"name": "",
 						"type": "string"
 					}
 				],
-				"name": "setLocation",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_price",
-						"type": "uint256"
-					}
-				],
-				"name": "setPrice",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -165,11 +112,11 @@
 	},
 	"sources": {
 		"contracts/firstTestContract.sol": {
-			"keccak256": "0x4fd08ea98a02fe2f96c0a4ff94cefd3956708b3a211de967ccc15d898a932090",
+			"keccak256": "0xac062c0720276283cd73272b67181377fb6f81be519190143df1afed2ebe9e9c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2d8acbc410bfe10a4f1390f1e005f4dd7a95fc401876cb7797ceb6b8b02df9a1",
-				"dweb:/ipfs/QmeHxVP76ttLk7DkmzehyGUPz7nAnwzRihRa6XS5xQTLRF"
+				"bzz-raw://2bc3ee32b2ac6e9b887375e391d9648a653660c5e76be5e21b1f4233e25542d8",
+				"dweb:/ipfs/QmbVDXVzCkeAkLq1WeoaANDbcsSMqP9SoqzL378GA3Rman"
 			]
 		}
 	},
